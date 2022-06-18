@@ -11,7 +11,12 @@ const App = () => {
       <NewsFeed />
       </div>
     
-
+<footer>Convert your  <mark>cryptocurrency </mark>  to another with live exchange rates available for you today, Read the headlines to trending crypto news and<br /> discover more on them by click on the headlines🚀
+<section>
+  Made with ❤️ by zilam.inc
+  
+  </section>
+  </footer>
     </div>
   );
 }
