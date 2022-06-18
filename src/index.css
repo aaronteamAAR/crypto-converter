@@ -15,8 +15,13 @@ a{
 }
 .app{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+
+}
+
+.app-wrapper{
+  display: flex;
 }
 .news-feed{
   font-size: 13px;
@@ -34,8 +39,33 @@ a{
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   padding: 18px;
   margin: 5px;
+  text-align: center;
 }
 
 .exchange-rate{
-  background-color: green;
+  background-color: rgb(24, 149, 199);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+
+}
+.input-box{
+  background-color:rgb(218, 227, 238) ;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
+}
+
+button{
+  border: none;
+  float: right;
+  margin: 3px;
+}
+
+button:hover{
+  background-color: coral;
+}
+
+input, select {
+  border: none;
 }
