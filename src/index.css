@@ -1,8 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Montserrat:ital,wght@0,100;0,300;0,500;0,600;0,700;1,100;1,500&family=Sora:wght@100;200;300;400;500;600;700&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Sora', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +9,32 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+a{
+  text-decoration: none;
+}
+.app{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.news-feed{
+  font-size: 13px;
+  text-decoration: none;
+  list-style: none;
+  background-color: rgb(204, 204, 231);
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  max-width: 300px;
+}
+
+.currency-converter{
+  background-color: rgb(230, 233,211);
+  padding: 18px;
+  margin: 5px;
+}
+
+.exchange-rate{
+  background-color: green;
 }
