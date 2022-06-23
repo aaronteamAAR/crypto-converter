@@ -14,13 +14,15 @@ app.get('/', (req,res) => {
 }) 
 
 app.get('/converter', (req,res) => {
+    const curparams = req.query.to_currency
+    const exparams = req.query.from_currency
     const options = {
         method: "GET",
         url: "https://alpha-vantage.p.rapidapi.com/query",
         params: {
-          from_currency: 'BTC',
+          from_currency: exparams,
           function: "CURRENCY_EXCHANGE_RATE",
-          to_currency: 'USD',
+          to_currency: curparams,
         },
         headers: {
           "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,

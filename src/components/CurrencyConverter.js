@@ -22,24 +22,19 @@ const CurrencyConverter = () => {
         function: "CURRENCY_EXCHANGE_RATE",
         to_currency: chosenSecondaryCurrency,
       },
-      headers: {
-        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
-        "X-RapidAPI-Host": "alpha-vantage.p.rapidapi.com",
-      },
     };
 
     axios
       .request(options)
       .then((response) => {
         console.log(
-          response.data["Realtime Currency Exchange Rate"]["5. Exchange Rate"]
+          response.data
         );
         setExchangeRate(
-          response.data["Realtime Currency Exchange Rate"]["5. Exchange Rate"]
+          response.data
         );
         setResult(
-          response.data["Realtime Currency Exchange Rate"]["5. Exchange Rate"] *
-            amount
+          response.data * amount
         );
         setPrimaryCurrencyExchange(chosenPrimaryCurrency);
         setSecondaryCurrencyExchange(chosenSecondaryCurrency);
