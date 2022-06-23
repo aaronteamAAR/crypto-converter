@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Montserrat:ital,wght@0,100;0,300;0,500;0,600;0,700;1,100;1,500&family=Sora:wght@100;200;300;400;500;600;700&display=swap");
+
 body {
   background-image: url('/public/tira.png');
   background-size: 90em;
@@ -13,10 +14,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 a {
   text-decoration: none;
   text-decoration-color: black;
 }
+
 .app {
   display: flex;
   flex-direction: column;
@@ -26,8 +29,9 @@ a {
 .app-wrapper {
   display: flex;
 }
-.news-feed { 
-   border-radius: 10px;
+
+.news-feed {
+  border-radius: 10px;
   font-size: 13px;
   text-decoration: none;
   list-style: none;
@@ -53,19 +57,24 @@ a {
   border-radius: 10px;
   margin-top: 10px;
 }
+
 select {
   font-family: "Sora", sans-serif;
 }
-h1{
+
+h1 {
   color: white;
 }
+
 p {
   font-size: 13px;
   color: black;
 }
+
 mark {
   background-color: #60d11e;
 }
+
 footer {
   font-size: 13px;
   position: fixed;
@@ -74,43 +83,31 @@ footer {
   width: 100%;
   color: grey;
   text-align: center;
-  background-image: linear-gradient(
-    transparent 0%,
-    transparent 90%,
-    rgb(255, 255, 255) 90%,
-    rgb(183, 250, 183)  100%
-  );
-  background-repeat: no-repeat;
-  background-size: 0% 50%;
-  background-position-x: right;
 
-  transition: background-size 300ms;
 }
 
-footer:hover{
-  background-size: 50% 50%;
-  background-position-x: center;
-}
-
-section{
+section {
   position: fixed;
   left: 0;
   bottom: 40px;
   width: 100%;
   text-align: center;
 }
+
 .input-box {
   background-color: #60d11e;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
+
 input {
   font-family: "Sora", sans-serif;
   border-radius: 3px;
   width: 200px;
   height: 20px;
 }
+
 button {
   border: none;
   float: right;
@@ -120,7 +117,8 @@ button {
 }
 
 button:hover {
-  background-color: coral;
+  background-color: black;
+  color: white;
 }
 
 input,
